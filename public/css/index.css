@@ -1,0 +1,83 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.barra {
+	position: relative;
+	float:right;
+	text-align: right;
+	width: 85%;
+	height: 5%;
+	background: #333;
+	color: #fff;
+    outline:  1px solid #2a2a2a;
+}
+.sidebar {
+	position: absolute;
+	width: 15%;
+	height: 100%;	
+	background: #333;	
+	color: #fff;
+    outline:  1px solid #2a2a2a;
+}
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar h2 {
+	text-align: center;
+	margin: 10px;
+	background: #2a2a2a;
+	
+}
+.sidebar li {
+	outline:  1px solid #2a2a2a;
+    transition-property: border;
+    transition-duration: 0.3s;
+}
+.sidebar li:hover {
+	background: #444;
+    border-left: 5px solid #eee;
+	
+}
+.sidebar a {
+	display: block;
+	color: #FFFFFF;
+	padding: 10px;
+	text-decoration: none;
+}
+.imagenes{
+	width: 85%;
+	height: 100%;
+	margin-left: 15%;
+	background-color: black;
+}
+.imagenes figure{
+	width: 40%;
+	height: 50%;
+	margin:auto;
+	position: relative;
+	display: inline-block;
+	border: 1px solid red;
+}
+.imagenes img{
+	margin: auto;
+	width: 950px;
+	height: 430px;
+}
+
+.contenido {
+	width: 2%;
+	height: 5%;
+	position: absolute;
+	background: #eee;
+    padding: 10px;
+    transition: all 0.3s;
+}
+.menu-bar {
+	cursor: pointer;
+}
+.abrir {
+	transform: translateX(15%);
+}
