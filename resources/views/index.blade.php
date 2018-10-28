@@ -2,7 +2,7 @@
 
 @section('content')
 	<div class="barra">
-		<h2>WINE :D</h2>
+		<h2>WINE </h2>
 	</div>
 	<div class="sidebar">
 		<h2>MENU</h2>
@@ -16,16 +16,16 @@
 	</div>
 	<div class="imagenes">
 		<figure>
-			<img src="{{URL::asset('/img/1.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
 		</figure>
 		<figure>
-			<img src="{{URL::asset('/img/1.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
 		</figure>
 		<figure>
-			<img src="{{URL::asset('/img/1.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
 		</figure>
 		<figure>
-			<img src="{{URL::asset('/img/1.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
 		</figure>
 	</div>
 	<!--
