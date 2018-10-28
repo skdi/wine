@@ -35,7 +35,7 @@
 
                 <form class="login100-form validate-form">
                     <span class="login100-form-title">
-                        Member Login
+                        Ingresa Aqui
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
@@ -56,22 +56,22 @@
                     
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn">
-                            Login
+                            Ingresa
                         </button>
                     </div>
 
                     <div class="text-center p-t-12">
                         <span class="txt1">
-                            Forgot
+                            Olvidaste tu
                         </span>
                         <a class="txt2" href="#">
-                            Username / Password?
+                            Usuario / Contraseña?
                         </a>
                     </div>
 
                     <div class="text-center p-t-136">
-                        <a class="txt2" href="#">
-                            Create your Account
+                        <a href="{{ route('register') }}" class="txt2" href="#">
+                            Crea tu Cuenta Aqui
                             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                         </a>
                     </div>
