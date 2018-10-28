@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<!--
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +10,7 @@
     <div class="main">
 
         <section class="signup">
-            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+           
             <div class="container">
                 <div class="signup-content">
                     <form method="POST" id="signup-form" class="signup-form">
@@ -45,20 +45,13 @@
 
     </div>
 
-    <!-- JS -->
+   
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
+-->
 
-
-
-
-
-
-
-
-<!--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -132,5 +125,5 @@
         </div>
     </div>
 </div>
--->
+
 @endsection
