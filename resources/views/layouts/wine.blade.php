@@ -5,6 +5,7 @@
 	<link href="{{ asset('css/index.css') }}" rel="stylesheet">
 	<script src="{{ asset('js/menu.js') }}" defer></script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	@yield('head')
 </head>
 <body>
 	@yield('content')
