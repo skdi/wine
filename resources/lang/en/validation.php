@@ -13,8 +13,8 @@ return [
     |
     */
 
-    'accepted' => 'The :attribute must be accepted.',
-    'active_url' => 'The :attribute is not a valid URL.',
+    'accepted' => 'El :attribute debe ser aceptado.',
+    'active_url' => 'El :attribute no es una direccion valida URL.',
     'after' => 'The :attribute must be a date after :date.',
     'after_or_equal' => 'The :attribute must be a date after or equal to :date.',
     'alpha' => 'The :attribute may only contain letters.',
@@ -30,7 +30,7 @@ return [
         'array' => 'The :attribute must have between :min and :max items.',
     ],
     'boolean' => 'The :attribute field must be true or false.',
-    'confirmed' => 'The :attribute confirmation does not match.',
+    'confirmed' => 'La confirmacion de :attribute no es la misma.',
     'date' => 'The :attribute is not a valid date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
@@ -83,10 +83,10 @@ return [
     'mimes' => 'The :attribute must be a file of type: :values.',
     'mimetypes' => 'The :attribute must be a file of type: :values.',
     'min' => [
-        'numeric' => 'The :attribute must be at least :min.',
-        'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
-        'array' => 'The :attribute must have at least :min items.',
+        'numeric' => 'El :attribute debe contener almenos least :min.',
+        'file' => 'El :attribute debe contener almenos :min kilobytes.',
+        'string' => 'El :attribute debe contener almenos :min characters.',
+        'array' => 'El :attribute debe contener almenos :min items.',
     ],
     'not_in' => 'The selected :attribute is invalid.',
     'not_regex' => 'The :attribute format is invalid.',
@@ -104,14 +104,14 @@ return [
     'size' => [
         'numeric' => 'The :attribute must be :size.',
         'file' => 'The :attribute must be :size kilobytes.',
-        'string' => 'The :attribute must be :size characters.',
-        'array' => 'The :attribute must contain :size items.',
+        'string' => 'La :attribute debe contener almenos :size characters.',
+        'array' => 'La :attribute debe contener almenos :size items.',
     ],
     'string' => 'The :attribute must be a string.',
     'timezone' => 'The :attribute must be a valid zone.',
-    'unique' => 'The :attribute has already been taken.',
+    'unique' => 'El :attribute ya esta en uso.',
     'uploaded' => 'The :attribute failed to upload.',
-    'url' => 'The :attribute format is invalid.',
+    'url' => 'El :attribute formato es invalido.',
 
     /*
     |--------------------------------------------------------------------------
