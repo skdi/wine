@@ -15,8 +15,17 @@
 		<h2>MENU</h2>
 		<ul>
 			<li><a href="">Inicio</a></li>
-			<li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
-			<li><a href="{{ route('register') }}">Registrarse</a></li>
+			 @guest
+			 	<li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
+				<li><a href="{{ route('register') }}">Registrarse</a></li>
+			 	
+			 @else 
+				<li><a href="{{ route('logout') }}"onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">Deseas salir {{ Auth::user()->name }}</a></li>
+			 	<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+					@csrf
+				</form>
+			@endif
 			<li><a href="">Contactenos</a></li>
 	        <li><a href="">Siguenos</a></li>
 		</ul>
