@@ -21,7 +21,8 @@
 	        <li><a href="">Siguenos</a></li>
 		</ul>
 	</div>
-	@yield('content')
-	
+	<div class="contenido">
+		@yield('content')
+	</div>
 </body>
 </html>

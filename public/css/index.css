@@ -1,6 +1,18 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin: 0 0;
+}
+h2{
+	line-height: 1.66;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+
+  font-family: 'Montserrat';
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
 }
 .barra {
 	position: relative;
@@ -19,6 +31,7 @@ body{
 	background: #333;	
 	color: #fff;
     outline:  1px solid #2a2a2a;
+    
 }
 .sidebar ul {
 	list-style: none;
@@ -68,11 +81,11 @@ body{
 }
 
 .contenido {
-	width: 2%;
-	height: 5%;
+	width: 85%;
+	height: 90%;
 	position: absolute;
-	background: #eee;
-    padding: 10px;
+	margin: 3% 15%;
+	
     transition: all 0.3s;
 }
 .menu-bar {

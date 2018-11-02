@@ -1,32 +1,50 @@
 @extends('layouts.wine')
 
+@section('head')
+
+  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+     <!-- Main css -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+@endsection
 @section('content')
-<!--
-<!DOCTYPE html>
-<html lang="en">
-
-<body>
-
-    <div class="main">
 
         <section class="signup">
            
             <div class="container">
                 <div class="signup-content">
-                    <form method="POST" id="signup-form" class="signup-form">
+                    <form method="POST" id="signup-form" class="signup-form" action="{{ route('register') }}">
+                        @csrf
                         <h2 class="form-title">Crea tu Cuenta Aqui</h2>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="name" id="name" placeholder="Nombre"/>
+                            <input type="text" class="form-input{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" id="name" placeholder="Nombre" value="{{ old('name') }}" required autofocus >
+                            @if ($errors->has('name'))
+                                <span class="invalid-feedback" role="alert">
+                                   <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                            @endif
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-input" name="email" id="email" placeholder="Correo"/>
+                            <input type="email" class="form-input{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" id="email" placeholder="Correo" value="{{ old('email') }}" required>
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
+                            @endif
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                            <input type="text" class="form-input{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" id="password" placeholder="Password">
+                            @if ($errors->has('password'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('password') }}</strong>
+                                </span>
+                            @endif
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-input" name="re_password" id="re_password" placeholder="Repite tu password"/>
+                            <input type="password" class="form-input" name="password_confirmation" id="password-confirm" placeholder="{{ __('Confirm Password') }}"/>
                         </div>
                         <div class="form-group">
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -42,16 +60,11 @@
                 </div>
             </div>
         </section>
-
-    </div>
-
    
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-</html>
--->
 
+<!--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -125,5 +138,5 @@
         </div>
     </div>
 </div>
-
+-->
 @endsection
