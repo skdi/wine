@@ -5,7 +5,7 @@
 	<div class="imagenes">
 	<
 		<figure>
-			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/rico1.jpg')}}" alt="" class="">
 		</figure>
 	<!--
 		<figure>
