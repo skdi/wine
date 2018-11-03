@@ -30,8 +30,10 @@
 	        <li><a href="">Siguenos</a></li>
 		</ul>
 	</div>
-	<div class="contenido">
-		@yield('content')
+	<div class="Gcontenido">
+		<div class="contenido">
+			@yield('content')
+		</div>
 	</div>
 </body>
 </html>
