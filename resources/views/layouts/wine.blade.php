@@ -14,7 +14,7 @@
 	<div class="sidebar">
 		<h2>Menú</h2>
 		<ul>
-			<li><a href="{{ url('wine') }}">Inicio</a></li>
+			<li><a href="{{ url('/') }}">Inicio</a></li>
 			 @guest
 			 	<li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
 				<li><a href="{{ route('register') }}">Registrarse</a></li>
