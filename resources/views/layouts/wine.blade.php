@@ -9,12 +9,12 @@
 </head>
 <body>
 	<div class="barra">
-		<h2>wine n bread corporation  </h2>
+		<h2>Wine N Bread Corporation  </h2>
 	</div>
 	<div class="sidebar">
-		<h2>menú</h2>
+		<h2>Menú</h2>
 		<ul>
-			<li><a href="{{ route('login') }}">Inicio</a></li>
+			<li><a href="{{ url('wine') }}">Inicio</a></li>
 			 @guest
 			 	<li><a href="{{ route('login') }}">Iniciar Sesión</a></li>
 				<li><a href="{{ route('register') }}">Registrarse</a></li>

@@ -3,21 +3,19 @@
 @section('content')
 	
 	<div class="imagenes">
-	<
 		<figure>
-			<img src="{{URL::asset('/img/rico1.jpg')}}" alt="" class="">
-		</figure>
-	<!--
-		<figure>
-			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/almacen.jpg')}}" alt="" class="">
 		</figure>
 		<figure>
-			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/BD.jpg')}}" alt="" class="">
 		</figure>
 		<figure>
-			<img src="{{URL::asset('/img/3.jpg')}}" alt="" class="">
+			<img src="{{URL::asset('/img/control.jpg')}}" alt="" class="">
 		</figure>
-	-->
+		<figure>
+			<img src="{{URL::asset('/img/controlVentas.jpg')}}" alt="" class="">
+		</figure>
+
 	</div>
 	<!--
 	<div class="contenido">
