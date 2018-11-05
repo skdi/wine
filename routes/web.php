@@ -14,7 +14,7 @@
 Route::get('/laravel', function () {
     return view('welcome');
 });
-Route::get('/', function () {
+Route::get('wine', function () {
     return view('index');
 });
 
